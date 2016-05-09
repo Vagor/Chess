@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Online-Chess</title>
+  <link rel="stylesheet" href="./dist/master.css" media="screen" title="no title" charset="utf-8">
+</head>
+
+<body>
+  <div class="pages">
+    <div class="login page">
+      <form class="input">
+        <h3>What's your nickname?</h3>
+        <input class="player-name" type="text">
+        <h3>And your opponent's?</h3>
+        <input class="opponent-name" type="text">
+      </form>
+    </div>
+    <div class="game page">
+      玩家名字：<p class="player-name-box"></p><br>
+      对手名字：<p class="opponent-name-box"></p>
+      <canvas id="chess" width="450px" height="450px"></canvas>
+    </div>
+  </div>
+  <script src="/dist/jquery.min.js"></script>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="/dist/main.js"></script>
+</body>
+
+</html>
